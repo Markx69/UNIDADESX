@@ -1,0 +1,152 @@
+*{/*Selecciona todos los elementos HTML en el documento.*/
+  margin: 0;/*Establece el margen de todos los elementos en 0.*/
+  padding: 0;/*Establece el relleno de todos los elementos en 0.*/
+  box-sizing: border-box;/*Establece el modelo de caja como "border-box" para todos los elementos. 
+  Esto significa que el ancho y la altura de un elemento incluirán el relleno y el borde, pero no los márgenes externos.*/
+  font-family: 'Poppins', sans-serif;/*Establece la fuente predeterminada para el documento como "Poppins", 
+  una fuente sans-serif. Si "Poppins" no está disponible, el navegador usará una fuente sans-serif genérica.*/
+}
+body{/*Selecciona el elemento <body> del documento.*/
+  display: flex;/*Establece el diseño de la página como un contenedor flexible, lo que permite el uso de flexbox para el diseño.*/
+  align-items: center;/*Centra verticalmente los elementos hijos del cuerpo en el eje principal (verticalmente), 
+  lo que hace que estén alineados verticalmente en el centro de la página.*/
+  justify-content: center;/*Centra horizontalmente los elementos hijos del cuerpo en el eje secundario (horizontalmente), 
+  lo que hace que estén alineados horizontalmente en el centro de la página.*/
+  min-height: 100vh;/* Establece la altura mínima del cuerpo en el 100% del alto de la ventana gráfica (viewport height), 
+  asegurando que el cuerpo ocupe al menos toda la altura de la ventana gráfica.*/
+  background-image: url('../memoP1/images/fnd.jpg');/* Establece una imagen de fondo para el cuerpo desde la ruta "../memoP1/images/fnd.jpg".*/
+}
+.wrapper{/*Selecciona elementos con la clase "wrapper".*/
+  padding: 25px;/* Establece un relleno interior de 25 píxeles para los elementos con la clase "wrapper".*/
+  border-radius: 10px;/*Establece un radio de borde de 10 píxeles para los elementos con la clase "wrapper", 
+  lo que crea bordes redondeados.*/
+  background: #0051ffa4;/* Establece un color de fondo para los elementos con la clase "wrapper".*/
+  box-shadow: 0 10px 30px rgba(0, 60, 255, 0.452);/*Agrega una sombra alrededor de los elementos con la clase "wrapper". La sombra tiene una 
+  desenfoque de 30 píxeles, una posición vertical de 10 píxeles y es de color rgba(0, 60, 255, 0.452), que es un azul con un 45.2% de opacidad.*/
+}
+.cards, .card, .view{/*Selecciona elementos con las clases "cards", "card" y "view".*/
+  display: flex;/*Establece estos elementos como contenedores flexibles, 
+  lo que permite que sus elementos secundarios se coloquen en un diseño flexible.*/
+  align-items: center;/*Centra verticalmente los elementos secundarios de estos contenedores flexibles.*/
+  justify-content: center;/*Centra horizontalmente los elementos secundarios de estos contenedores flexibles.*/
+  
+}
+.cards{/* Selecciona elementos con la clase "cards".*/
+  height: 400px;/* Establece la altura de los elementos con la clase "cards" en 400 píxeles.*/
+  width: 400px;/*Establece el ancho de los elementos con la clase "cards" en 400 píxeles.*/
+  flex-wrap: wrap;/* Permite que los elementos con la clase "cards" se envuelvan en varias líneas si no caben en una sola fila.*/
+  justify-content: space-between;/*Distribuye uniformemente el espacio entre los elementos secundarios 
+  de los contenedores flexibles con la clase "cards", lo que crea un espacio igual entre ellos.*/
+}
+.cards .card{/*Selecciona los elementos con la clase "card" dentro de los elementos con la clase "cards".*/
+  cursor: pointer;/*Establece el cursor del mouse como un puntero cuando pasa sobre las cartas, 
+  indicando que son interactivas y se pueden hacer clic.*/
+  list-style: none;/*Quita los estilos de viñetas de las cartas, lo que significa que no se mostrarán viñetas 
+  delante de las cartas en una lista.*/
+  user-select: none;/*Evita que los usuarios puedan seleccionar el texto dentro de las cartas.
+ Esto es útil para evitar que se resalte el texto cuando se hace clic y se arrastra sobre las cartas.*/
+  position: relative;/*Establece la posición de las cartas como relativa con respecto a su contenedor principal.*/
+  perspective: 1000px;/*Define la perspectiva de las cartas para efectos 3D. 
+  Esto determina la profundidad de la perspectiva 3D cuando se aplican transformaciones 3D a las cartas.*/
+  transform-style: preserve-3d;/*Establece el estilo de transformación 3D de las cartas como "preserve-3d", 
+  lo que mantiene la perspectiva 3D de las cartas hijas cuando se aplican transformaciones 3D a sus elementos secundarios.*/
+  height: calc(100% / 4 - 10px);/*Establece la altura de las cartas como el 25% del alto del contenedor, menos 10 píxeles. 
+  Esto permite que las cartas se ajusten al tamaño del contenedor y tengan un pequeño espacio entre ellas.*/
+  width: calc(100% / 4 - 10px);/*Establece el ancho de las cartas como el 25% del ancho del contenedor, menos 10 píxeles. 
+  Esto permite que las cartas se ajusten al tamaño del contenedor y tengan un pequeño espacio entre ellas.*/
+}
+.card.shake{/*Selecciona los elementos con la clase "shake" dentro de los elementos con la clase "card".*/
+  animation: shake 0.35s ease-in-out;/*Aplica una animación llamada "shake" a las cartas con la clase "shake". 
+  Esta animación tiene una duración de 0.35 segundos y se ejecuta con una aceleración suave y una desaceleración.*/
+}
+@keyframes shake {/*Define un conjunto de fotogramas clave para una animación llamada "shake". 
+  Los fotogramas clave especifican cómo cambiará el estilo de un elemento a lo largo del tiempo durante la animación.*/
+  0%, 100%{/*Establece el estilo del elemento al inicio (0%) y al final (100%) de la animación. 
+    En este caso, se establece transform: translateX(0);, lo que significa que no habrá desplazamiento horizontal.*/
+    transform: translateX(0);
+  }
+  20%{
+    transform: translateX(-13px);/*Establece el estilo del elemento al 20% de la duración de la animación. 
+    transform: translateX(-13px); desplaza horizontalmente el elemento hacia la izquierda en 13 píxeles.*/
+  }
+  40%{/* Establece el estilo del elemento al 40% de la duración de la animación.*/
+    transform: translateX(13px);/*Desplaza el elemento horizontalmente hacia la derecha en 13 píxeles.*/
+  }
+  60%{/* Establece el estilo del elemento al 60% de la duración de la animación.*/
+    transform: translateX(-8px);/*Desplaza el elemento horizontalmente hacia la izquierda en 8 píxeles.*/
+  }
+  80%{/*Establece el estilo del elemento al 80% de la duración de la animación.*/
+    transform: translateX(8px);/*Desplaza el elemento horizontalmente hacia la derecha en 8 píxeles.*/
+  }
+}
+.card .view{/*Selecciona los elementos con la clase "view" que son hijos de elementos con la clase "card".*/
+  width: 100%;/*Establece el ancho de los elementos "view" al 100% del ancho de su contenedor.*/
+  height: 100%;/*Establece la altura de los elementos "view" al 100% de la altura de su contenedor.*/
+  position: absolute;/* Establece la posición de los elementos "view" como absoluta, 
+  lo que les permite colocarse encima de otros elementos dentro de su contenedor.*/
+  border-radius: 7px;/*Establece un radio de borde de 7 píxeles para los elementos "view", creando esquinas redondeadas.*/
+  background: #404250d8;/*Establece un color de fondo semi-transparente para los elementos "view".*/
+  pointer-events: none;/*Deshabilita la interacción del puntero del mouse con los elementos "view", 
+  lo que significa que los clics no se registrarán en estos elementos.*/
+  backface-visibility: hidden;/*Oculta la cara posterior de los elementos "view" cuando se giran en 3D, 
+  lo que mejora el rendimiento y la apariencia visual de las animaciones.*/
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);/*Agrega una sombra suave a los elementos "view", 
+  que se proyecta ligeramente hacia abajo y hacia los lados.*/
+  transition: transform 0.25s linear;/* Establece una transición suave de 0.25 segundos 
+  para la propiedad "transform" de los elementos "view", que se activa cuando se realiza una transformación en ellos.*/
+}
+.card .front-view img{/*Selecciona las imágenes que son hijos de elementos con la clase "front-view", 
+  que a su vez son hijos de elementos con la clase "card".*/
+  width: 19px;/* Establece el ancho de estas imágenes en 19 píxeles.*/
+}
+.card .back-view img{/*Selecciona las imágenes que son hijos de elementos con la clase "back-view", 
+  que a su vez son hijos de elementos con la clase "card".*/
+  max-width: 45px;/* Establece el ancho máximo de estas imágenes en 45 píxeles.*/
+}
+.card .back-view{/*Selecciona los elementos con la clase "back-view" que son hijos de elementos con la clase "card".*/
+  transform: rotateY(-180deg);/*Gira estos elementos 180 grados en el eje Y, 
+  lo que los coloca inicialmente en la posición de la cara posterior de la carta.*/
+}
+.card.flip .back-view{/*Selecciona los elementos con la clase "back-view" que son hijos de elementos con la clase "card" 
+  que también tienen la clase "flip".*/
+  transform: rotateY(0);/* Gira estos elementos 0 grados en el eje Y, lo que los devuelve a la posición de la cara frontal de la carta.*/
+}
+.card.flip .front-view{/* Selecciona los elementos con la clase "front-view" que son hijos de elementos con la clase "card" 
+  que también tienen la clase "flip".*/
+  transform: rotateY(180deg);/*Gira estos elementos 180 grados en el eje Y, lo que los coloca en la posición de la cara posterior
+   de la carta cuando se voltea.*/
+}
+
+@media screen and (max-width: 700px) {/*Inicia un media query que se aplica cuando el ancho de la pantalla es de 700 píxeles o menos.*/
+  .cards{/*Selecciona los elementos con la clase "cards" dentro de este media query.*/
+    height: 350px;/*Establece la altura de los elementos con la clase "cards" a 350 píxeles 
+    cuando la pantalla tiene un ancho máximo de 700 píxeles.*/
+    width: 350px;/*Establece el ancho de los elementos con la clase "cards" a 350 píxeles 
+    cuando la pantalla tiene un ancho máximo de 700 píxeles.*/
+  }
+  .card .front-view img{/*Selecciona las imágenes dentro de elementos con la clase "front-view" 
+    que son hijos de elementos con la clase "card" dentro de este media query.*/
+    width: 17px;/*Establece el ancho de estas imágenes a 17 píxeles cuando la pantalla tiene un ancho máximo de 700 píxeles.*/
+  }
+  .card .back-view img{/*Selecciona las imágenes dentro de elementos con la clase "back-view" 
+    que son hijos de elementos con la clase "card" dentro de este media query.*/
+    max-width: 40px;/*Establece el ancho máximo de estas imágenes a 40 píxeles cuando la pantalla tiene un ancho máximo de 700 píxeles.*/
+  }
+}
+
+@media screen and (max-width: 530px) {/*Inicia un media query que se aplica cuando el ancho de la pantalla es de 530 píxeles o menos.*/
+  .cards{/*Selecciona los elementos con la clase "cards" dentro de este media query.*/
+    height: 300px;/* Establece la altura de los elementos con la clase "cards" a 300 píxeles 
+    cuando la pantalla tiene un ancho máximo de 530 píxeles.*/
+    width: 300px;/*Establece el ancho de los elementos con la clase "cards" a 300 píxeles 
+    cuando la pantalla tiene un ancho máximo de 530 píxeles.*/
+  }
+  .card .front-view img{/*Selecciona las imágenes dentro de elementos con la clase "front-view" 
+    que son hijos de elementos con la clase "card" dentro de este media query.*/
+    width: 15px;/*Establece el ancho de estas imágenes a 15 píxeles cuando la pantalla tiene un ancho máximo de 530 píxeles.*/
+  }
+  .card .back-view img{/* Selecciona las imágenes dentro de elementos con la clase "back-view" 
+    que son hijos de elementos con la clase "card" dentro de este media query.*/
+    max-width: 35px;/*Establece el ancho máximo de estas imágenes a 35 píxeles cuando la pantalla tiene un ancho máximo de 530 píxeles.*/
+  }
+}

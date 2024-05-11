@@ -1,0 +1,30 @@
+<!DOCTYPE html><!--Define el tipo de documento como HTML5.-->
+<html lang="en"><!--Abre el elemento raíz HTML con el atributo de idioma establecido en "en" (inglés).-->
+<head><!--Abre la sección de encabezado del documento.-->
+    <meta charset="UTF-8"><!--Especifica el conjunto de caracteres utilizado en el documento como UTF-8.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Configura la vista del área 
+        de contenido para que se ajuste al ancho del dispositivo y establece la escala inicial de la página en 1.0.-->
+    <title>P3</title><!--Establece el título del documento.-->
+</head>
+<body><!--Abre el cuerpo del documento.-->
+    <h2>PRÁCTICA 3</h2><!--Crea un encabezado de nivel 2 con el texto "PRÁCTICA 3".-->
+    <p id="demo"> MODIFICADO DESDE JS</p><!--Crea un párrafo con un ID de "demo" y el texto "MODIFICADO DESDE JS".-->
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'"><!--Crea un botón que, al hacer clic, 
+        cambia el tamaño de fuente del elemento con el ID "demo" a 35px.-->
+        CAMBIAR TAMAÑO DEL PÁRRAFO<!--Define el texto del botón.-->
+    </button>
+    <button type="button"
+    onclick="document.getElementById('demo').style.display='none'"><!--Crea un botón que, al hacer clic, oculta el elemento con el ID "demo".-->
+    OCULTAR
+</button>
+<h3 id="result">R=</h3><!--Crea un encabezado de nivel 3 con el ID "result" y el texto "R=".-->
+<button type="button"
+onclick="document.getElementById('result').innerHTML=suma">RESULTADO</button><!--Crea un botón que, al hacer clic, 
+    muestra el resultado de la suma de las variables x e y en el elemento con el ID "result".-->
+<script>
+    let x=6.69; //<!--Declara una variable x y le asigna el valor 6.69.-->
+    let y=40.174; //<!--Declara una variable y y le asigna el valor 40.174.-->
+    let suma=x+y; //<!--Calcula la suma de las variables x e y y la asigna a la variable suma.-->
+</script>
+</body>
+</html>

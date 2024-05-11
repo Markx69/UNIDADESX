@@ -1,0 +1,209 @@
+/* Establece el margen en 0 y el modelo de caja como border-box para todos los elementos */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}  
+
+/* Estilos para el cielo */
+.sky {
+  position: absolute; /* Posición absoluta para el cielo */
+  top: -40%; /* Desplaza el cielo hacia arriba un 40% de la altura de la ventana */
+  width: 100%; /* Ancho del cielo es igual al ancho de la ventana */
+  height: 100%; /* Altura del cielo es igual a la altura de la ventana */
+  background-color: #9DD1F0; /* Color de fondo azul claro */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde del cielo */
+  z-index: -1; /* Coloca el cielo detrás de otros elementos */
+}
+
+/* Estilos para las nubes */
+.cloud {
+  position: absolute; /* Posición absoluta para las nubes */
+  background-color: #FFFFFF; /* Color de las nubes blanco */
+  border-radius: 40%; /* Borde redondeado para las nubes */
+  animation: moveCloud linear infinite; /* Aplica animación de movimiento a las nubes */
+}
+
+/* Estilos para la primera nube */
+.cloud:nth-child(1) {
+  width: 150px; /* Ancho de la primera nube */
+  height: 80px; /* Altura de la primera nube */
+  top: 50%; /* Desplaza la primera nube hacia abajo al centro vertical */
+  left: 40%; /* Desplaza la primera nube hacia la derecha al centro horizontal */
+  animation-duration: 5s; /* Duración de la animación de la primera nube */
+}
+ /* Estilos para la segunda nube */
+.cloud:nth-child(2) {
+  width: 120px; /* Ancho de la segunda nube */
+  height: 60px; /* Altura de la segunda nube */
+  top: 40%; /* Desplaza la segunda nube hacia abajo al 40% de la altura */
+  left: -2%; /* Desplaza la segunda nube hacia la izquierda al -2% del ancho */
+  animation-duration: 5s; /* Duración de la animación de la segunda nube */
+}
+
+/* Estilos para la tercera nube */
+.cloud:nth-child(3) {
+  width: 180px; /* Ancho de la tercera nube */
+  height: 90px; /* Altura de la tercera nube */
+  top: 50%; /* Desplaza la tercera nube hacia abajo al 50% de la altura */
+  left: -2%; /* Desplaza la tercera nube hacia la izquierda al -2% del ancho */
+  animation-duration: 5s; /* Duración de la animación de la tercera nube */
+}
+
+/* Estilos para la cuarta nube */
+.cloud:nth-child(4) {
+  width: 180px; /* Ancho de la cuarta nube */
+  height: 90px; /* Altura de la cuarta nube */
+  top: 80%; /* Desplaza la cuarta nube hacia abajo al 80% de la altura */
+  left: 20%; /* Desplaza la cuarta nube hacia la derecha al 20% del ancho */
+  animation-duration: 5s; /* Duración de la animación de la cuarta nube */
+}
+
+/* Definición de la animación moveCloud */
+@keyframes moveCloud {
+  to {
+      transform: translateX(500%); /* Translada las nubes horizontalmente hacia la derecha un 500% del ancho */
+  }
+}
+/* Estilos para Kirby */
+.kirby {
+  margin: 60px; /* Margen exterior de 60px */
+  width: 250px; /* Ancho de Kirby */
+  height: 250px; /* Altura de Kirby */
+  background-color: #f38da4; /* Color de fondo de Kirby */
+  border-radius: 50%; /* Borde redondeado para formar un círculo */
+  border: 5px solid; /* Borde sólido de 5px */
+  position: relative; /* Posición relativa */
+}
+/* Estilos para el ojo izquierdo */
+.eye {
+  position: absolute; /* Posición absoluta */
+  top: 51px; /* Distancia desde la parte superior */
+  left: 65px; /* Distancia desde la izquierda */
+  width: 37px; /* Ancho del ojo */
+  height: 80px; /* Altura del ojo */
+  background-color: #004889; /* Color de fondo del ojo */
+  border-radius: 50%; /* Borde redondeado para formar un círculo */
+  border: 5px solid; /* Borde sólido de 5px */
+}
+/* Estilos para el ojo derecho */
+.eye-r {
+  left: initial; /* Reinicia la posición izquierda */
+  right: 65px; /* Distancia desde la derecha */
+}
+/* Estilos para la pupila */
+.pupil {
+  position: absolute; /* Posición absoluta */
+  border-radius: 50%; /* Borde redondeado para formar un círculo */
+  left: -1px; /* Distancia desde la izquierda */
+  right: -1px; /* Distancia desde la derecha */
+  top: 0; /* Distancia desde la parte superior */
+  bottom: 20px; /* Distancia desde la parte inferior */
+  background-color: #000; /* Color de fondo de la pupila */
+  box-shadow: 0 10px #002662; /* Sombra */
+}
+/* Estilos para la pupila */
+.pupil::before {
+  content: ""; /* Contenido vacío generado */
+  position: absolute; /* Posición absoluta */
+  left: 18%; /* Distancia desde la izquierda */
+  transform: traslate(-50%); /* Transformación para centrar horizontalmente */
+  width: 20px; /* Ancho de la pupila */
+  height: 30px; /* Altura de la pupila */
+  border-radius: 50%; /* Borde redondeado para formar un círculo */
+  background-color: #fff; /* Color de fondo blanco */
+}
+/* Estilos para el rubor del lado izquierdo */
+.blush {
+  position: absolute; /* Posición absoluta */
+  top: 128px; /* Distancia desde la parte superior */
+  left: 22px; /* Distancia desde la izquierda */
+  width: 50px; /* Ancho del rubor */
+  height: 25px; /* Altura del rubor */
+  background-color: #f2727f; /* Color de fondo del rubor */
+  border-radius: 50%; /* Borde redondeado para formar un círculo */
+  transform: rotate(14deg); /* Rotación de 14 grados */
+}
+/* Estilos para el rubor del lado derecho */
+.blush-r {
+  left: initial; /* Reinicia la posición izquierda */
+  right: 22px; /* Distancia desde la derecha */
+  transform: rotate(-14deg); /* Rotación de -14 grados */
+}
+/* Estilos para la boca */
+.mouth {
+  position: absolute; /* Posición absoluta */
+  top: 60%; /* Distancia desde la parte superior */
+  left: 50%; /* Distancia desde la izquierda */
+  transform: translate(-50%); /* Transformación para centrar horizontalmente */
+  width: 42px; /* Ancho de la boca */
+  height: 45px; /* Altura de la boca */
+  background-color: #844f54; /* Color de fondo de la boca */
+  border: 5px solid; /* Borde sólido */
+  border-radius: 8px 8px 50% 50%; /* Borde redondeado (8px en las esquinas superiores, 50% en la esquina inferior) */
+  display: flex; /* Establece el modelo de caja flexible */
+  align-items: flex-end; /* Alinea los elementos flexibles en la parte inferior */
+  justify-content: center; /* Centra el contenido horizontalmente */
+}
+/* Estilos para el labio inferior */
+.mouth::before {
+  content: ""; /* Contenido vacío generado */
+  width: 30px; /* Ancho del labio inferior */
+  height: 20px; /* Altura del labio inferior */
+  background-color: #f2676a; /* Color de fondo del labio inferior */
+  border-radius: 50%; /* Borde redondeado para formar un círculo */
+  outline: 5px solid; /* Contorno sólido */
+}
+/* Estilos para el brazo */
+.arm {
+  position: absolute; /* Posición absoluta */
+  top: 30%; /* Distancia desde la parte superior */
+  left: -50px; /* Distancia desde la izquierda */
+  width: 100px; /* Ancho del brazo */
+  height: 70px; /* Altura del brazo */
+  background-color: #f38da4; /* Color de fondo del brazo */
+  border: 5px solid; /* Borde sólido */
+  border-radius: 50%; /* Borde redondeado para formar un círculo */
+  transform: rotate(44deg); /* Rotación de 44 grados */
+  z-index: -1; /* Índice z negativo para colocar el brazo detrás del cuerpo */
+}
+/* Estilos para el brazo derecho */
+.arm-r {
+  left: initial; /* Restaura la propiedad 'left' a su valor inicial */
+  right: -50px; /* Distancia desde la derecha */
+  top: 36%; /* Distancia desde la parte superior */
+}
+/* Estilos para las patas */
+.patas {
+  position: absolute; /* Posición absoluta */
+  bottom: -11px; /* Distancia desde la parte inferior */
+  left: -16px; /* Distancia desde la izquierda */
+  width: 140px; /* Ancho de las patas */
+  height: 80px; /* Altura de las patas */
+  background-color: #cd1956; /* Color de fondo de las patas */
+  border: 5px solid; /* Borde sólido */
+  border-radius: 50%; /* Borde redondeado para formar un círculo */
+  z-index: -1; /* Índice z negativo para colocar las patas detrás del cuerpo */
+}
+/* Estilos para el elemento pseudo ::before de las patas */
+.patas::before {
+  content: ""; /* Contenido vacío generado */
+  position: absolute; /* Posición absoluta */
+  left: 5px; /* Distancia desde la izquierda */
+  bottom: 20px; /* Distancia desde la parte inferior */
+  width: 30px; /* Ancho del elemento pseudo */
+  height: 30px; /* Altura del elemento pseudo */
+  border-radius: 50%; /* Borde redondeado para formar un círculo */
+  background-color: #f06675; /* Color de fondo del elemento pseudo */
+  transform: rotate(228deg); /* Rotación de 228 grados */
+}
+/* Estilos para las patas derechas */
+.patas-r {
+  left: initial; /* Restaura la propiedad 'left' a su valor inicial */
+  right: -16px; /* Distancia desde la derecha */
+}
+/* Estilos para el elemento pseudo ::before de las patas derechas */
+.patas-r::before {
+  left: initial; /* Restaura la propiedad 'left' a su valor inicial */
+  right: 5px; /* Distancia desde la derecha */
+  transform: rotate(-228deg); /* Rotación de -228 grados */
+}

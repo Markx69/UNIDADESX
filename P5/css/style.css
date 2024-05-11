@@ -1,0 +1,32 @@
+body{/* Inicia una regla de estilo para el elemento <body> del documento HTML.*/
+    background-color: black;/*Establece el color de fondo del cuerpo del documento en negro.*/
+    z-index: -1;/*Establece el índice z del cuerpo del documento en -1, 
+    lo que coloca el cuerpo detrás de otros elementos con índices z mayores.*/
+}
+#pizarra{/* Inicia una regla de estilo para el elemento con el ID "pizarra", 
+    que probablemente sea el lienzo (canvas) donde se realiza el dibujo.*/
+    width: 1344.5px;/* Establece el ancho del lienzo en 1344.5 píxeles.*/
+    height: 610px;/*Establece la altura del lienzo en 610 píxeles.*/
+    border: 1px;/*Establece un borde alrededor del lienzo con un ancho de 1 píxel.*/
+    border-color: rgb(255, 255, 255);/*Establece el color del borde del lienzo en blanco, 
+    utilizando el modelo de color RGB.*/
+    border-style: dashed;/*Establece el estilo del borde del lienzo como punteado.*/
+    position: absolute;/*Establece la posición del lienzo como absoluta, 
+    lo que significa que se posiciona en relación con su primer elemento padre posicionado.*/
+    cursor: crosshair;/*Cambia el cursor del mouse cuando se coloca sobre el lienzo a una cruz.*/
+    margin-left: auto;/*Centra horizontalmente el lienzo utilizando márgenes automáticos en el lado izquierdo.*/
+    margin-right: auto;/* Centra horizontalmente el lienzo utilizando márgenes automáticos en el lado derecho.*/
+}
+@media screen and (max-width:600px) {/* Inicia una regla de estilo de medios para pantallas con un ancho máximo de 600 píxeles.*/
+    body{/* Inicia una regla de estilo para el elemento <body> dentro de la regla de medios.*/
+        background-color: black;/*Establece el color de fondo del cuerpo del documento en negro dentro de la regla de medios.*/
+    }
+    #pizarra{/*Inicia una regla de estilo para el elemento con el ID "pizarra" dentro de la regla de medios.*/
+        margin-left: auto;/*Centra horizontalmente el lienzo utilizando márgenes automáticos en el lado izquierdo dentro de la regla de medios.*/
+        margin-right: auto;/*Centra horizontalmente el lienzo utilizando márgenes automáticos en el lado derecho dentro de la regla de medios.*/
+        width: 1080px;/*Establece el ancho del lienzo en 1080 píxeles dentro de la regla de medios.*/
+        height: 2357px;/*Establece la altura del lienzo en 2357 píxeles dentro de la regla de medios.*/
+    }
+    
+    
+}

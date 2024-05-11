@@ -1,0 +1,29 @@
+<!DOCTYPE html><!--Define el tipo de documento como HTML5, lo que indica que el documento está escrito en HTML5.-->
+<html lang="en"><!-- Inicia el elemento raíz <html> del documento HTML y especifica que el idioma principal 
+    del contenido es inglés ("en" para inglés).-->
+<head><!--Este es el elemento <head> del documento. Contiene metadatos, enlaces a recursos externos
+    como hojas de estilo CSS y scripts JavaScript, y el título de la página.-->
+    <meta charset="UTF-8"><!--Inicia el elemento raíz <html> del documento HTML y especifica que el idioma 
+        principal del contenido es inglés ("en" para inglés). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Esta etiqueta meta 
+        especifica la codificación de caracteres del documento como UTF-8, 
+        que es una codificación de caracteres capaz de representar la mayoría de los caracteres utilizados en la mayoría de los idiomas escritos.-->
+    <link rel="stylesheet" href="css/style.css"><!-- Este enlace importa una hoja de estilo CSS externa ubicada 
+        en el archivo style.css en la carpeta css. Se utiliza para aplicar estilos al contenido HTML.-->
+    <title>CANVAS</title><!--Este es el título de la página que se muestra en la pestaña del navegador. Aquí se especifica 
+        "CANVAS" como el título de la página. -->
+</head>
+<body><!-- Este es el elemento <body> del documento HTML, que contiene todo el contenido visible de la página.-->
+    <input type="color" id="colorPicker"><!--Este es un elemento de entrada que permite al usuario seleccionar un color 
+        utilizando un selector de color integrado en el navegador. La selección de color se puede utilizar en el lienzo (canvas) posteriormente. -->
+    <canvas id="pizarra"><!--  Este es un elemento <canvas> de HTML5 que proporciona una superficie de dibujo dinámica mediante JavaScript.
+         Si el navegador no admite el elemento canvas, se mostrará el contenido de texto "Tu navegador no soporta el elemento canvas de HTML".-->
+        Tu navegador no soporta el elemento canvas de HTML
+    </canvas>
+    <script src="js/script.js"></script><!-- Este script de origen enlaza un archivo JavaScript externo llamado script.js 
+    ubicado en la carpeta js. 
+    El script contiene funcionalidades para interactuar con el lienzo (canvas) y probablemente maneja eventos 
+    y funciones relacionadas con el dibujo y la interacción del usuario. -->
+    
+</body>
+</html>

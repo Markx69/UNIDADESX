@@ -1,0 +1,50 @@
+.container {
+    position: relative;/*Establece la posición del contenedor como relativa 
+    para que los elementos absolutamente posicionados dentro de él se posicionen en relación con este contenedor.*/
+    display: flex;/*Establece el contenedor como un contenedor flexible, lo que permite que sus elementos secundarios 
+    se coloquen en una fila o columna.*/
+  }
+  
+  .slide {
+    position: absolute;/*Establece la posición de las diapositivas como absoluta para que puedan colocarse exactamente 
+    donde se desee dentro del contenedor.*/
+    top: 0;/* Coloca la diapositiva en la parte superior del contenedor.*/
+    left: 0;/*Coloca la diapositiva en el borde izquierdo del contenedor.*/
+    width: 50vw;/* Establece el ancho de la diapositiva como el 50% del ancho de la ventana gráfica (viewport).*/
+    height: 100vh;/*Establece la altura de la diapositiva como el 100% de la altura de la ventana gráfica.*/
+    background-color: #f0f0f0; /* Color de fondo para las imágenes *//**/
+    transition: transform 0.5s ease-in-out;/*Aplica una transición suave de medio segundo al transformar la diapositiva.*/
+  }
+  
+  img {
+    width: 100%;/*Establece el ancho de la imagen al 100% del ancho de su contenedor.*/
+    height: 98.5%;/*Establece el ancho de la imagen al 100% del ancho de su contenedor.*/
+  }
+  
+  .text-slide {
+    text-shadow: 0 0 35px #000000;/*Aplica un efecto de sombra al texto para hacerlo más legible.*/
+    position: absolute;/*Establece la posición del texto como absoluta para que pueda colocarse exactamente sobre la diapositiva.*/
+    top: 0;/* Coloca el texto en la parte superior del contenedor.*/
+    right: 0;/*Coloca el texto en el borde derecho del contenedor.*/
+    width: 47.5vw;/* Establece el ancho del texto como el 47.5% del ancho de la ventana gráfica.*/
+    height: 98.5vh;/*Establece la altura del texto como el 98.5% de la altura de la ventana gráfica.*/
+    background-color: #ffffff; /* Color de fondo para el texto */
+    display: flex;/*Centra vertical y horizontalmente el contenido del texto dentro de su contenedor.*/
+    align-items: center;/**/
+    text-align: center;/*Alinea el texto al centro dentro de su contenedor.*/
+    font-size: 24px;/* Establece el tamaño de la fuente del texto en 24 píxeles.*/
+    line-height: 1.5;/*Establece la altura de línea del texto en 1.5 veces el tamaño de la fuente.*/
+    transition: transform 0.5s ease-in-out;/*Aplica una transición suave de medio segundo al transformar el texto.*/
+  }
+  
+  .text-slide p {
+    margin: 0;/* Elimina el margen predeterminado de los párrafos dentro del texto, lo que garantiza que el texto se 
+    muestre sin ningún espacio adicional alrededor.
+    */
+  }
+  
+  .slide.active + .text-slide {
+    right: auto; /* Cuando la imagen está activa, movemos el texto al lado izquierdo */
+    left: 0;/*Coloca el texto en el borde izquierdo del contenedor.*/
+    transform: translateY(-100%); /* Movemos el texto hacia arriba */
+  }

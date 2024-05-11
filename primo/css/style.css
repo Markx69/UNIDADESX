@@ -1,0 +1,7 @@
+*{
+    text-align: center;/*alinea todo el html al centro*/
+    
+}
+#numeroInput{
+    box-shadow: 0 0 10px rgb(255, 0, 0);/*agrega una sombra al input*/
+}

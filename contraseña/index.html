@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Especifica la codificación de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Establece la escala inicial del viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Título de la página -->
+    <title>Contraseña</title>
+</head>
+<body>
+    <!-- Contenedor principal de la página con una clase de Bootstrap -->
+    <div class="container at-5">
+        <!-- Formulario para ingresar la contraseña -->
+        <form id="keyForm">
+            <!-- Grupo de formulario para las teclas presionadas -->
+            <div class="form-group">
+                <!-- Etiqueta para las teclas presionadas -->
+                <label for="pressedKeys">Teclas presionadas</label>
+                <!-- Campo de entrada de contraseña -->
+                <input type="password" class="lblPressedKeys" id="pressedKeys" name="pressedKeys"/>
+                <!-- Etiqueta para mostrar el mensaje de validación de contraseña -->
+                <label for="lblPressedKeys" id="lblPressedKeys"></label>
+            </div>
+            <!-- Botón de enviar el formulario -->
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

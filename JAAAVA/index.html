@@ -1,0 +1,26 @@
+<!DOCTYPE html><!--Esta etiqueta declara que el documento es un documento HTML5.-->
+<html lang="en"><!--Esta etiqueta <html> define el comienzo del documento HTML. 
+    El atributo lang especifica el idioma del contenido, que en este caso es inglés ("en").-->
+<head><!--La etiqueta <head> contiene metadatos del documento, como enlaces a hojas de estilo, scripts, metadatos de SEO y más.-->
+    <meta charset="UTF-8"><!--Este elemento <meta> especifica el conjunto de caracteres utilizado en el documento como UTF-8, 
+        que incluye la mayoría de los caracteres escritos en cualquier idioma humano.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Este elemento <meta> establece la configuración de la ventana 
+        gráfica del navegador (viewport) para que el ancho se ajuste al ancho del dispositivo y la escala inicial sea 1.0. 
+        Es importante para la correcta visualización en dispositivos móviles y tablets.-->
+    <link rel="" href=""><!--Este elemento <link> normalmente se utiliza para vincular una hoja de estilos externa al documento HTML. 
+        Sin embargo, en este caso, falta la especificación de la relación (rel) y la ruta (href), lo que significa que no está vinculando ninguna hoja de estilos externa.-->
+    <title>Mi primer JS</title><!--La etiqueta <title> establece el título del documento, que aparecerá en la pestaña del navegador.-->
+</head>
+<body><!--La etiqueta <body> contiene todo el contenido visible del documento HTML.-->
+    <h2 id="demo2">HOLA JS</h2><!--Este elemento <h2> muestra un encabezado de nivel 2 con el texto "HOLA JS". El atributo id proporciona un identificador único al elemento, 
+        que puede ser utilizado para referenciarlo en JavaScript o CSS.-->
+    <p id="demo">TEXTO PRUEBA</p><!--Este elemento <p> muestra un párrafo con el texto "TEXTO PRUEBA". Al igual que el encabezado, 
+        tiene un atributo id para identificación única.-->
+    <button onclick="document.getElementById('demo').innerHTML= Date()">da click para mostrar la fecha</button><!--Este elemento <button> crea un botón que,
+         al hacer clic en él, ejecuta una función de JavaScript para mostrar la fecha y hora actual en el párrafo con el id "demo".-->
+    <button onclick="document.getElementById('demo2').innerHTML= 'HE CAMBIADO'"><!--Este elemento <button> crea otro botón que, al hacer clic en él,
+         modifica el contenido del encabezado con el id "demo2" a "FOKIU".-->
+        da click para modificar título
+        </button>
+</body>
+</html>

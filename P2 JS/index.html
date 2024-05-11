@@ -1,0 +1,39 @@
+<!DOCTYPE html><!--Esta etiqueta declara que el documento es un documento HTML5.-->
+<html lang="en"><!--Esta etiqueta <html> define el comienzo del documento HTML. 
+    El atributo lang especifica el idioma del contenido, que en este caso es inglés ("en").-->
+<head><!--La etiqueta <head> contiene metadatos del documento, como enlaces a hojas de estilo, 
+    scripts, metadatos de SEO y más.-->
+    <meta charset="UTF-8"><!--Este elemento <meta> especifica el conjunto de caracteres utilizado
+     en el documento como UTF-8, que incluye la mayoría de los caracteres escritos en cualquier idioma humano.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Este elemento <meta> 
+        establece la configuración de la ventana gráfica del navegador (viewport) 
+        para que el ancho se ajuste al ancho del dispositivo y la escala inicial sea 1.0. 
+        Es importante para la correcta visualización en dispositivos móviles y tablets.-->
+    <link rel="stylesheet" href="css/style.css"><!--Este elemento <link> vincula el documento HTML con una hoja de estilos externa 
+        llamada "style.css", que contiene las reglas de estilo para la apariencia del contenido HTML.-->
+    <title>PRÁCTICA 2</title><!--La etiqueta <title> establece el título del documento, que aparecerá en la pestaña del navegador.-->
+</head>
+<body id='body'><!--La etiqueta <body> contiene todo el contenido visible del documento HTML. Se le asigna el atributo id con el valor "body".-->
+    <img src="imgs/pic_bulboff.gif" id='myImage'><!--Este elemento <img> muestra una imagen con la ruta "imgs/pic_bulboff.gif". 
+        Se le asigna el atributo id con el valor "myImage".-->
+    <h2 class="t1"><!--Este elemento <h2> muestra un encabezado de nivel 2 con el texto "CONEXIÓN EN SERIE PARA MANSIÓN". 
+        Se le asigna la clase "t1".-->
+        CONEXIÓN EN SERIE PARA MANSIÓN 
+    </h2>
+    <h3 class="t2">CAMBIA ELEMENTOS Y TAMBIÉN ATRIBUTOS</h3><!--Este elemento <h3> muestra un encabezado de nivel 3 con el texto 
+        "CAMBIA ELEMENTOS Y TAMBIÉN ATRIBUTOS". Se le asigna la clase "t2".-->
+    <p class="p1">VAMOS A CAMBIAR EL VALOR DEL ATRIBUTO CON EL SUPER JS</p><!--Este elemento <p> muestra un párrafo con el texto 
+        "VAMOS A CAMBIAR EL VALOR DEL ATRIBUTO CON EL SUPER JS". Se le asigna la clase "p1".-->
+    <button onclick="document.getElementById('myImage').src='imgs/pic_bulbon.gif'" class="b1">Encender focou</button><!--
+        Este elemento <button> crea un botón que, al hacer clic en él, cambia la imagen a "pic_bulbon.gif" y enciende el foco. 
+            Se le asigna la clase "b1".-->
+    <button onclick="document.getElementById('myImage').src='imgs/pic_bulboff.gif'" class="b2">Apagar focou</button><!--
+        Este elemento <button> crea un botón que, al hacer clic en él, cambia la imagen a "pic_bulboff.gif" y apaga el foco. 
+        Se le asigna la clase "b2".-->
+    <button onclick="document.getElementById('body').style.backgroundImage= 'url(imgs/off.png)'">Modo noche</button><!--
+        Este elemento <button> crea un botón que, al hacer clic en él, cambia el fondo del cuerpo a "off.png", simulando el modo nocturno.-->
+    <button onclick="document.getElementById('body').style.backgroundImage= 'url(imgs/fondo.jpg)'">Modo día</button><!--
+        Este elemento <button> crea un botón que, al hacer clic en él, cambia el fondo del cuerpo a "fondo.jpg", simulando el modo diurno.-->
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+/* Estilos para el cuerpo */
+body {
+  display: flex; /* Configura el contenedor del cuerpo como un contenedor flex */
+  align-items: center; /* Centra verticalmente los elementos hijos */
+  justify-content: center; /* Centra horizontalmente los elementos hijos */
+  margin: 0 auto; /* Establece un margen automático para centrar el cuerpo horizontalmente */
+  height: 100vh; /* Establece la altura del cuerpo al 100% del viewport height */
+  background-color: #f1f1f1; /* Color de fondo del cuerpo */
+}
+/* Estilos para los elementos de entrada */
+input {
+  display: flex; /* Configura los elementos de entrada como contenedores flex */
+  align-items: center; /* Centra verticalmente los elementos hijos */
+  justify-content: center; /* Centra horizontalmente los elementos hijos */
+  margin: 0 auto; /* Establece un margen automático para centrar los elementos de entrada horizontalmente */
+}

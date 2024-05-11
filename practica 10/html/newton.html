@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Definición del conjunto de caracteres y configuración de la vista -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Fórmulas Físicas</title>
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="CSS/Style.css">
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Título principal -->
+        <h1>Cálculo Newton</h1>
+        <!-- División para la fórmula -->
+        <div class="formula">
+            <!-- Opciones para el cálculo de Newton (inicialmente oculto) -->
+            <div id="newtonOptions" class="options hidden">
+                <!-- Selección de opciones (Fuerza, Masa, Aceleración) -->
+                <p onclick="seleccionarOpcion(this)">Fuerza</p>
+                <p onclick="seleccionarOpcion(this)">Masa</p>
+                <p onclick="seleccionarOpcion(this)">Aceleración</p>
+            </div>
+            <!-- Campos de entrada y botón de cálculo (inicialmente oculto) -->
+            <div id="newtonData" class="data hidden">
+                <!-- Campos de entrada para valores numéricos -->
+                <input type="number" id="newtonInput1" placeholder="">
+                <input type="number" id="newtonInput2" placeholder="">
+                <input type="number" id="newtonInput3" placeholder="">
+                <!-- Botón para iniciar el cálculo -->
+                <button onclick="calcularNewton()">Calcular</button>
+                <!-- Resultado del cálculo (inicialmente oculto) -->
+                <p id="newtonResult" class="hidden"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclusión del archivo JavaScript que contiene las funciones de cálculo -->
+    <script src="../js/newton.js"></script>
+    <!-- Scripts de jQuery, Popper.js y Bootstrap (necesarios para el funcionamiento de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

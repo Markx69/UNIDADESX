@@ -1,0 +1,27 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento HTML como HTML5 -->
+<html lang="es"> <!-- Establece el idioma de la página como español -->
+<head>
+    <meta charset="UTF-8"> <!-- Especifica el conjunto de caracteres utilizado en el documento como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Establece la escala inicial y el ancho de la ventana gráfica -->
+    <link rel="stylesheet" href="../FORMULARIO/css/style.css"> <!-- Enlaza la hoja de estilos CSS externa -->
+    <title>FORM SAVE</title> <!-- Establece el título de la página -->
+</head>
+<body>
+    <form id="myForm"> <!-- Crea un formulario con el identificador "myForm" -->
+        <label for="fname">Nombre: </label><br/> <!-- Etiqueta para el campo de entrada de nombre -->
+        <input type="text" id="fname" name="fname" required/> <br/> <!-- Campo de entrada de texto para el nombre -->
+        <br/> <!-- Salto de línea -->
+        <label for="lname">Apellido: </label><br/> <!-- Etiqueta para el campo de entrada de apellido -->
+        <input type="text" id="lname" name="lname" required/> <br/> <!-- Campo de entrada de texto para el apellido -->
+        <label for="email">Correo Electrónico: </label><br/> <!-- Etiqueta para el campo de entrada de correo electrónico -->
+        <input type="email" id="email" name="email" required/> <br/> <!-- Campo de entrada de correo electrónico -->
+        <label for="rfc">Registro Federal de Contribuyentes: </label><br/> <!-- Etiqueta para el campo de entrada de RFC -->
+        <input type="text" id="rfc" name="rfc" required/> <br/> <!-- Campo de entrada de texto para el RFC -->
+        <br/> <!-- Salto de línea -->
+        <input type="button" value="Guardar como PDF" onclick="generatePDF()" /> <!-- Botón para generar un PDF -->
+        <button onclick="agregarElemento()">Agrega un elemento</button> <!-- Botón para agregar un elemento -->
+    </form> <!-- Cierra el formulario -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"> </script> <!-- Incluye la biblioteca jsPDF para la generación de PDF -->
+    <script src="../FORMULARIO/JS/script.js"></script> <!-- Incluye el archivo JavaScript personalizado -->
+</body>
+</html>

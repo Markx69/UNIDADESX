@@ -1,0 +1,40 @@
+<!DOCTYPE html><!--Esta línea define el tipo de documento como HTML5.-->
+<html lang="en"><!--Inicia el elemento raíz HTML y especifica que el idioma del documento es inglés.-->
+<head><!--Inicia la sección de encabezado del documento, que contiene metadatos y enlaces a archivos externos, 
+    como hojas de estilo y scripts.-->
+    <meta charset="UTF-8"><!--Especifica la codificación de caracteres del documento 
+        como UTF-8 para admitir una amplia gama de caracteres.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Configura la visualización del documento 
+        para que se ajuste al ancho del dispositivo y se escala inicialmente a 1.0.-->
+    <link rel="stylesheet" href="css/style.css"><!--Enlaza la hoja de estilo externa "style.css" ubicada en el 
+        directorio "css" al documento HTML.-->
+    <title>A que no adivinas</title><!--Define el título del documento que se mostrará en la pestaña del navegador.-->
+</head><!--erra la sección de encabezado del documento.-->
+<body><!--Inicia la sección del cuerpo del documento, que contiene el contenido visible del sitio web.-->
+    <div class="container"><!--Crea un contenedor con la clase "container" para organizar el contenido.-->
+    <h1  class="titulo">Adivina adivinador</h1><!--Define un encabezado de nivel 1 (h1) con la clase "titulo", 
+        que contiene el texto "Adivina adivinador"-->
+    <p class="instruccion">Si muy salsa, intenta adivinar un número del 1 al 100, te doy 10 intentos</p>
+    <!--Define un párrafo con la clase "instruccion", que contiene las instrucciones del juego.-->
+    <input type="text" class="field" placeholder="Ingresa un número" id="caja"><!--Crea un campo de entrada de texto
+        donde el usuario puede ingresar un número. Tiene la clase "field", un marcador de posición (placeholder) 
+        que indica al usuario qué debe ingresar y un id "caja".-->
+    <button type="button" onclick="verificar()" id="btnveri">Adivinar</button><!--Define un botón con el texto "Adivinar". 
+        Al hacer clic en él, se llamará a la función "verificar()". Tiene un id "btnveri".-->
+    </div><!-- Cierra un div que no parece estar abierto en este fragmento de código.-->
+    <p id="mostrar" class="mostrar"><!--Define un párrafo con el id "mostrar" y la clase "mostrar". 
+        Este párrafo probablemente se usará para mostrar algún resultado o mensaje en el juego.-->
+    </p>
+    <p id="medir"><!--Define otro párrafo con el id "medir". Parece estar vacío y puede usarse más adelante en el código JavaScript.-->
+    </p>
+    <div class="comienzo"><!--Abre un div con la clase "comienzo".-->
+        <button id="btnShow" class="btn btn-primary" onclick="ShowHide()"><!--Define un botón con el texto "INICIAR JUEGO". 
+            Al hacer clic en él, se llamará a la función "ShowHide()". Tiene un id "btnShow" y clases adicionales "btn" y "btn-primary".-->
+            INICIAR JUEGO
+        </button><!-- Cierra el botón.-->
+    </div><!--Cierra el div con la clase "comienzo".-->
+
+    <script src="../azar/js/script.js"></script><!--Enlaza un archivo JavaScript llamado "script.js" ubicado en la carpeta "js"
+         dentro de una carpeta llamada "azar" que está un nivel por encima del directorio actual.-->
+</body><!--Cierra el cuerpo del documento HTML.-->
+</html><!--Cierra el documento HTML.-->

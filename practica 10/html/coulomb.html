@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definición del conjunto de caracteres y configuración de la vista -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Título de la página -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- División para la fórmula de cálculo de Coulomb -->
+        <div class="formula">
+            <!-- Título de la fórmula -->
+            <h1>Cálculo Coulomb</h1>
+            <!-- Opciones de entrada para el cálculo de Coulomb (inicialmente oculto) -->
+            <div id="coulombOptions" class="options hidden">
+                <!-- Etiqueta y campo de entrada para la carga -->
+                <label for="carga">Introduce la carga (C):</label>
+                <input type="number" id="cargaCoulomb">
+                <!-- Etiqueta y campo de entrada para la distancia -->
+                <label for="distancia">Introduce la distancia (m):</label>
+                <input type="number" id="distanciaCoulomb">
+                <!-- Botón para iniciar el cálculo -->
+                <button onclick="calcularCoulomb()">Calcular</button>
+            </div>
+            <!-- Descripción de la fórmula (clic para mostrar opciones) -->
+            <p class="formula-description" onclick="toggleOptions('coulomb')">Se obtiene como</p>
+            <!-- Datos y resultado del cálculo de Coulomb (inicialmente oculto) -->
+            <div id="coulombData" class="data hidden">
+                <p id="coulombResult" class="hidden"></p>
+            </div>
+        </div>
+    </div>
+    <!-- Inclusión del archivo JavaScript que contiene las funciones de cálculo -->
+    <script src="../js/coulomb.js"></script>
+    <!-- Scripts de jQuery, Popper.js y Bootstrap (necesarios para el funcionamiento de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

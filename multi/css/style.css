@@ -1,0 +1,20 @@
+* {
+    text-align: center; /* Alinea todo el contenido al centro */
+}
+.bt {
+    margin-top: 1%; /* Margen superior del botón */
+    border-radius: 1rem; /* Borde redondeado del botón */
+    border-color: rgb(255, 0, 0); /* Color del borde del botón (rojo) */
+}
+
+#num {
+    margin-top: 10px; /* Margen superior del campo de entrada de texto */
+    width: 150px; /* Ancho del campo de entrada de texto */
+    height: 120px; /* Altura del campo de entrada de texto */
+}
+#multip {
+    text-align: center; /* Alinea el texto del párrafo 'multip' al centro */
+}
+.t1 {
+    margin-top: 25px; /* Margen superior del elemento con la clase 't1' */
+}

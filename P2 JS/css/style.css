@@ -1,0 +1,35 @@
+body{/*Este selector CSS aplica estilos al elemento <body> de la página.*/
+    background-image: url("../imgs/fondo.jpg");/*Establece una imagen de fondo 
+    para el cuerpo de la página, utilizando la ruta "../imgs/fondo.jpg".*/
+    background-repeat: no-repeat;/*Evita que la imagen de fondo se repita vertical y horizontalmente.*/
+    background-attachment: fixed;/*Fija la posición de la imagen de fondo para que no se desplace cuando 
+    se desplace el contenido de la página.*/
+    background-size: 100% 99.95%;/*Establece el tamaño de la imagen de fondo al 100% del ancho del cuerpo y al 99.95% de la altura del cuerpo.
+    */
+}
+#myImage{/*Este selector CSS aplica estilos al elemento con el id "myImage".*/
+width: 4%;/*Establece el ancho del elemento "myImage" al 4% del ancho del contenedor.*/
+height: 10%;/*Establece la altura del elemento "myImage" al 10% del alto del contenedor.*/
+margin-top: 3%;/*Establece un margen superior del 3% respecto al contenedor principal.*/
+margin-left: 56%;/*Establece un margen izquierdo del 56% respecto al contenedor principal.*/
+margin-right: auto;/*Establece un margen derecho automático para que el elemento se alinee correctamente.*/
+transform: rotate(180deg);/*Aplica una rotación de 180 grados al elemento.*/
+filter: drop-shadow(3px 0px 7px #474747);/*Agrega una sombra al elemento con un desplazamiento 
+horizontal de 3px, sin desplazamiento vertical y un desenfoque de 7px, utilizando un color de sombra de #474747.*/
+z-index: -1;/*Establece la posición z del elemento para que esté detrás de otros elementos en la página.*/
+}
+.t1{/*Este selector CSS aplica estilos a los elementos con la clase "t1".*/
+font-size: 20px;/*Establece el tamaño de fuente en 20px para los elementos con la clase "t1".*/
+text-align: center;/*Centra el texto dentro de los elementos con la clase "t1".*/
+margin-top: -6%;/*Establece un margen superior del -6% para ajustar la posición vertical del elemento.*/
+margin-left: -50%;/*Establece un margen izquierdo del -50% para ajustar la posición horizontal del elemento.*/
+}
+.t2{/*Este selector CSS aplica estilos a los elementos con la clase "t2".*/
+text-align: center;/*Centra el texto dentro de los elementos con la clase "t2".*/
+margin-left: -50%;/*Establece un margen izquierdo del -50% para ajustar la posición horizontal del elemento.*/
+}
+.p1{/*Este selector CSS aplica estilos a los elementos con la clase "p1".*/
+text-align: center;/*Centra el texto dentro de los elementos con la clase "p1".*/
+margin-left: -50%;/*Establece un margen izquierdo del -50% para ajustar la posición horizontal del elemento.*/
+}
+

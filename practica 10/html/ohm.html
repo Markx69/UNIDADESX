@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definición del conjunto de caracteres y configuración de la vista -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Título de la página -->
+    <title>Ohm</title>
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="rounded container border border-primary">
+        <!-- Encabezado para calcular la resistencia -->
+        <h2>Calcular Resistencia</h2>
+        <!-- Formulario para calcular la resistencia -->
+        <form action="" id="resistencia">
+            <!-- Campo para ingresar el valor de la corriente -->
+            <label for="corriente">Valor de la corriente</label>
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="corriente"
+            required
+            /><br/><br/>
+            <!-- Campo para ingresar el valor del voltaje -->
+            <label for="voltaje">Valor del voltaje</label><br/>
+            <input type="number"
+            placeholder="solo valores numericos"
+            id="voltaje"
+            required/><br/>
+            <!-- Etiqueta para mostrar el resultado de la resistencia -->
+            <label for="resultado" id="lblResultado">...</label><br/>
+            <!-- Botón para calcular la resistencia -->
+            <input 
+            type="button"
+            value="calcular"
+            class="btn-warning"
+            onclick="calcularResistencia()"/>
+        </form>
+        <br/>
+    </div>
+    <br/>
+    <!-- Segundo cálculo para calcular la corriente -->
+    <div class="rounded container border border-primary">
+    <h2>Calcular Corriente</h2>
+        <form action="" id="corriente">
+            <!-- Campo para ingresar el valor del voltaje -->
+            <label for="voltaje">Valor del voltaje</label>
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="voltaje"
+            required
+            /><br/><br/>
+            <!-- Campo para ingresar el valor de la resistencia -->
+            <label for="resistencia0">Valor de la resistencia</label><br/>
+            <input type="number"
+            placeholder="solo valores numericos"
+            id="resistencia0"
+            required/><br/>
+            <!-- Etiqueta para mostrar el resultado de la corriente -->
+            <label for="resultado" id="lblcorrResultado">...</label><br/>
+            <!-- Botón para calcular la corriente -->
+            <input 
+            type="button"
+            value="calcular"
+            class="btn-warning"
+            onclick="calcularCorriente()"/>
+        </form>
+        <br>
+        </div>
+        <br>
+        <!-- Tercer cálculo para calcular el voltaje -->
+        <div class="rounded container border border-primary">
+        <h2>Calcular Voltaje</h2>
+        <form action="" id="voltaje">
+            <!-- Campo para ingresar el valor de la corriente -->
+            <label for="corriente">Valor de la corriente</label>
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="corriente"
+            required
+            /><br/><br/>
+            <!-- Campo para ingresar el valor de la resistencia -->
+            <label for="resistencia1">Valor de la resistencia</label><br/>
+            <input type="number"
+            placeholder="solo valores numericos"
+            id="resistencia1"
+            required/><br/>
+            <!-- Etiqueta para mostrar el resultado del voltaje -->
+            <label for="resultado" id="IbiVoltResultado">...</label><br/>
+            <!-- Botón para calcular el voltaje -->
+            <input 
+            type="button"
+            value="calcular"
+            class="btn-warning"
+            onclick="calcularVoltaje()"/>
+        </form>
+        </div>
+    <!-- Inclusión del archivo JavaScript que contiene las funciones de cálculo -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

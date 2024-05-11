@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento -->
+<html lang="es"> <!-- Inicio del documento HTML con el atributo lang definido como español -->
+  <head> <!-- Encabezado del documento HTML -->
+    <title>Menú de Leyes Físicas</title> <!-- Título del documento -->
+    <!-- Enlaces a las hojas de estilo CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" /> <!-- Estilos personalizados definidos en el archivo style.css -->
+  </head>
+  <body> <!-- Cuerpo del documento HTML -->
+    <div class="container"> <!-- Contenedor principal con clase "container" de Bootstrap -->
+      <h1>Cálculos de física elemental:</h1> <!-- Encabezado de nivel 1 -->
+      <div class="dropdown"> <!-- Div que representa un menú desplegable de Bootstrap -->
+        <!-- Botón que activa el menú desplegable, con clases de Bootstrap -->
+        <!-- Atributo que indica que el botón activa el menú desplegable -->
+        <button
+          class="btn btn-primary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown" 
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Seleccione una Ley <!-- Texto del botón -->
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <!-- Menú desplegable de Bootstrap -->
+          <!-- Elementos de menú que son enlaces a otras páginas HTML -->
+          <a class="dropdown-item" href="html/ohm.html">Ley de Ohm</a>
+          <a class="dropdown-item" href="html/coulomb.html">Ley de Coulomb</a>
+          <a class="dropdown-item" href="html/newton.html">Leyes de Newton</a>
+        </div>
+      </div>
+    </div>
+    <!-- Inclusión de scripts de jQuery, Popper.js y Bootstrap para el funcionamiento de los componentes -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

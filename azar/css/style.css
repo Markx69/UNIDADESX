@@ -1,0 +1,54 @@
+body{ /* Inicia la regla de estilo para el elemento body.*/
+    background-image: url('../fdn.jpg');
+    /*Establece una 
+    imagen de fondo para el cuerpo del documento. La imagen se encuentra en la ubicación '../fdn.jpg'.*/
+    text-align: center;/*Centra el texto dentro del cuerpo del documento.*/
+    color: antiquewhite;/* Establece el color del texto en antiquewhite (blanco antiguo).*/
+    background-size: cover;/* Ajusta el tamaño de la imagen de fondo para cubrir completamente el área del cuerpo del documento.*/
+}
+.container{/*nicia la regla de estilo para los elementos con la clase "container".*/
+    visibility: hidden;/* Establece la visibilidad de los elementos con la clase "container" como oculta.*/
+}
+.comienzo{
+    visibility: visible;/*Establece la propiedad de visibilidad como visible. Esto hará que los elementos con la clase `comienzo` 
+    sean visibles en la página.*/
+}
+.btn{
+    margin-top: 20%;/*Establece el margen superior del botón al 20% del ancho del contenedor padre.*/
+    border: none; /*Elimina los bordes del botón.*/
+    color: black; /*Establece el color del texto del botón en negro.*/
+    padding: 14px 28px; /*Establece el relleno del botón con 14 píxeles en la parte superior y inferior, 
+    y 28 píxeles en los lados izquierdo y derecho.*/
+    cursor: pointer; /*Cambia el cursor al puntero cuando se pasa sobre el botón.*/
+    border-radius: 5px/*Establece el radio de borde del botón en 5 píxeles, lo que le da esquinas redondeadas.
+    */
+}
+.btn-primary{
+    background-color: white; /*Establece el color de fondo del botón en blanco.*/
+    border: 2px solid #007bff;/* Establece un borde sólido de 2 píxeles de grosor y color #007bff (un tono de azul) alrededor del botón.*/
+}
+.btn-primary:hover {
+    background: #0b7dda; /*Cambia el color de fondo del botón a #0b7dda (un tono de azul) cuando se coloca el cursor sobre él.*/
+    color: white;}/*Cambia el color del texto del botón a blanco cuando se coloca el cursor sobre él.*/
+.titulo{
+    background-color: rgba(0, 0, 0, 0.288);/* Establece el color de fondo del título con un valor de opacidad de 0.288, lo que le da un 
+    tono oscuro y semitransparente.*/
+    box-shadow: 1px 1px 2px white, 0 0 1em rgb(2, 190, 247), 0 0 0.2em rgb(2, 190, 247);/*Agrega una sombra al título para darle 
+    un efecto tridimensional.*/
+    margin-top: 2%;/*Establece el margen superior de la instrucción al 2% del ancho del contenedor padre.*/
+}
+.instruccion{
+    margin-top: 2%;/*Establece el margen superior de la instrucción al 2% del ancho del contenedor padre.*/
+    background-color: rgba(0, 0, 0, 0.288);/*Establece el color de fondo de la instrucción con un valor de opacidad de 0.288, 
+    lo que le da un tono oscuro y semitransparente.*/
+    box-shadow: 1px 1px 2px white, 0 0 1em rgb(2, 190, 247), 0 0 0.2em rgb(2, 190, 247);/*Agrega una sombra a la instrucción 
+    para darle un efecto tridimensional.*/
+}
+#btnveri{
+    box-shadow: 1px 1px 2px white, 0 0 1em rgb(2, 190, 247), 0 0 0.2em rgb(2, 190, 247);/*Agrega una sombra a la instrucción 
+    para darle un efecto tridimensional.*/
+}
+#caja{
+    box-shadow: 1px 1px 2px white, 0 0 1em rgb(2, 190, 247), 0 0 0.2em rgb(2, 190, 247);/*Agrega una sombra a la instrucción 
+    para darle un efecto tridimensional.*/
+}
